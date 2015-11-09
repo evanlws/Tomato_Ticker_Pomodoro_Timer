@@ -1,0 +1,553 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4F07B62218F4767D006D424F /* TimerDone.aif in Resources */ = {isa = PBXBuildFile; fileRef = 4F07B62118F4767D006D424F /* TimerDone.aif */; };
+		4F07B62418F47727006D424F /* TimerDone2.aif in Resources */ = {isa = PBXBuildFile; fileRef = 4F07B62318F47727006D424F /* TimerDone2.aif */; };
+		4F71637F18DCCB6E008EB38B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F71637E18DCCB6E008EB38B /* Cocoa.framework */; };
+		4F71638B18DCCB6E008EB38B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F71638A18DCCB6E008EB38B /* main.m */; };
+		4F71638F18DCCB6E008EB38B /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 4F71638D18DCCB6E008EB38B /* Credits.rtf */; };
+		4F71639218DCCB6E008EB38B /* TTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F71639118DCCB6E008EB38B /* TTAppDelegate.m */; };
+		4F71639718DCCB6E008EB38B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F71639618DCCB6E008EB38B /* Images.xcassets */; };
+		4F71639E18DCCB6F008EB38B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F71639D18DCCB6F008EB38B /* XCTest.framework */; };
+		4F71639F18DCCB6F008EB38B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F71637E18DCCB6E008EB38B /* Cocoa.framework */; };
+		4F7163A718DCCB6F008EB38B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4F7163A518DCCB6F008EB38B /* InfoPlist.strings */; };
+		4F7163A918DCCB6F008EB38B /* Tomato_TickerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F7163A818DCCB6F008EB38B /* Tomato_TickerTests.m */; };
+		4F9C66451A2EA56200083122 /* TTMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F9C66441A2EA56200083122 /* TTMenuController.m */; };
+		4F9C66481A2EADE800083122 /* TTMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F9C66471A2EADE800083122 /* TTMenuItem.m */; };
+		4FFBEADD18DFB7C0001DC634 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F71639318DCCB6E008EB38B /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4F7163A018DCCB6F008EB38B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F71637318DCCB6E008EB38B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4F71637A18DCCB6E008EB38B;
+			remoteInfo = "Tomato Ticker";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4F07B62118F4767D006D424F /* TimerDone.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = TimerDone.aif; sourceTree = "<group>"; };
+		4F07B62318F47727006D424F /* TimerDone2.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = TimerDone2.aif; sourceTree = "<group>"; };
+		4F71637B18DCCB6E008EB38B /* Tomato Ticker - The Pomodoro Timer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tomato Ticker - The Pomodoro Timer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F71637E18DCCB6E008EB38B /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		4F71638118DCCB6E008EB38B /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		4F71638218DCCB6E008EB38B /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		4F71638318DCCB6E008EB38B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4F71638618DCCB6E008EB38B /* Tomato Ticker-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tomato Ticker-Info.plist"; sourceTree = "<group>"; };
+		4F71638A18DCCB6E008EB38B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4F71638C18DCCB6E008EB38B /* Tomato Ticker-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tomato Ticker-Prefix.pch"; sourceTree = "<group>"; };
+		4F71638E18DCCB6E008EB38B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		4F71639018DCCB6E008EB38B /* TTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTAppDelegate.h; sourceTree = "<group>"; };
+		4F71639118DCCB6E008EB38B /* TTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTAppDelegate.m; sourceTree = "<group>"; };
+		4F71639418DCCB6E008EB38B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		4F71639618DCCB6E008EB38B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		4F71639C18DCCB6F008EB38B /* Tomato TickerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tomato TickerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F71639D18DCCB6F008EB38B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		4F7163A418DCCB6F008EB38B /* Tomato TickerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tomato TickerTests-Info.plist"; sourceTree = "<group>"; };
+		4F7163A618DCCB6F008EB38B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4F7163A818DCCB6F008EB38B /* Tomato_TickerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tomato_TickerTests.m; sourceTree = "<group>"; };
+		4F9C66431A2EA56200083122 /* TTMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTMenuController.h; sourceTree = "<group>"; };
+		4F9C66441A2EA56200083122 /* TTMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTMenuController.m; sourceTree = "<group>"; };
+		4F9C66461A2EADE800083122 /* TTMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTMenuItem.h; sourceTree = "<group>"; };
+		4F9C66471A2EADE800083122 /* TTMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTMenuItem.m; sourceTree = "<group>"; };
+		4FFBEADE18DFBCE1001DC634 /* Tomato Ticker - The Pomodoro Timer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Tomato Ticker - The Pomodoro Timer.entitlements"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4F71637818DCCB6E008EB38B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F71637F18DCCB6E008EB38B /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F71639918DCCB6F008EB38B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F71639F18DCCB6F008EB38B /* Cocoa.framework in Frameworks */,
+				4F71639E18DCCB6F008EB38B /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4F71637218DCCB6E008EB38B = {
+			isa = PBXGroup;
+			children = (
+				4FFBEADE18DFBCE1001DC634 /* Tomato Ticker - The Pomodoro Timer.entitlements */,
+				4F71638418DCCB6E008EB38B /* Tomato Ticker */,
+				4F7163A218DCCB6F008EB38B /* Tomato TickerTests */,
+				4F71637D18DCCB6E008EB38B /* Frameworks */,
+				4F71637C18DCCB6E008EB38B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4F71637C18DCCB6E008EB38B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4F71637B18DCCB6E008EB38B /* Tomato Ticker - The Pomodoro Timer.app */,
+				4F71639C18DCCB6F008EB38B /* Tomato TickerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4F71637D18DCCB6E008EB38B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4F71637E18DCCB6E008EB38B /* Cocoa.framework */,
+				4F71639D18DCCB6F008EB38B /* XCTest.framework */,
+				4F71638018DCCB6E008EB38B /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4F71638018DCCB6E008EB38B /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4F71638118DCCB6E008EB38B /* AppKit.framework */,
+				4F71638218DCCB6E008EB38B /* CoreData.framework */,
+				4F71638318DCCB6E008EB38B /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		4F71638418DCCB6E008EB38B /* Tomato Ticker */ = {
+			isa = PBXGroup;
+			children = (
+				4F9C66401A2EA41800083122 /* View */,
+				4F9C66411A2EA42100083122 /* Controller */,
+				4F9C663F1A2EA40C00083122 /* Model */,
+				4F71639018DCCB6E008EB38B /* TTAppDelegate.h */,
+				4F71639118DCCB6E008EB38B /* TTAppDelegate.m */,
+				4F9C66461A2EADE800083122 /* TTMenuItem.h */,
+				4F9C66471A2EADE800083122 /* TTMenuItem.m */,
+				4F9C66421A2EA44300083122 /* Assets */,
+				4F71638518DCCB6E008EB38B /* Supporting Files */,
+			);
+			path = "Tomato Ticker";
+			sourceTree = "<group>";
+		};
+		4F71638518DCCB6E008EB38B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4F71638618DCCB6E008EB38B /* Tomato Ticker-Info.plist */,
+				4F71638A18DCCB6E008EB38B /* main.m */,
+				4F71638C18DCCB6E008EB38B /* Tomato Ticker-Prefix.pch */,
+				4F71638D18DCCB6E008EB38B /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4F7163A218DCCB6F008EB38B /* Tomato TickerTests */ = {
+			isa = PBXGroup;
+			children = (
+				4F7163A818DCCB6F008EB38B /* Tomato_TickerTests.m */,
+				4F7163A318DCCB6F008EB38B /* Supporting Files */,
+			);
+			path = "Tomato TickerTests";
+			sourceTree = "<group>";
+		};
+		4F7163A318DCCB6F008EB38B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4F7163A418DCCB6F008EB38B /* Tomato TickerTests-Info.plist */,
+				4F7163A518DCCB6F008EB38B /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4F9C663F1A2EA40C00083122 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		4F9C66401A2EA41800083122 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4F71639318DCCB6E008EB38B /* MainMenu.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		4F9C66411A2EA42100083122 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4F9C66431A2EA56200083122 /* TTMenuController.h */,
+				4F9C66441A2EA56200083122 /* TTMenuController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		4F9C66421A2EA44300083122 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				4F07B62118F4767D006D424F /* TimerDone.aif */,
+				4F07B62318F47727006D424F /* TimerDone2.aif */,
+				4F71639618DCCB6E008EB38B /* Images.xcassets */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4F71637A18DCCB6E008EB38B /* Tomato Ticker - The Pomodoro Timer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F7163AC18DCCB6F008EB38B /* Build configuration list for PBXNativeTarget "Tomato Ticker - The Pomodoro Timer" */;
+			buildPhases = (
+				4F71637718DCCB6E008EB38B /* Sources */,
+				4F71637818DCCB6E008EB38B /* Frameworks */,
+				4F71637918DCCB6E008EB38B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Tomato Ticker - The Pomodoro Timer";
+			productName = "Tomato Ticker";
+			productReference = 4F71637B18DCCB6E008EB38B /* Tomato Ticker - The Pomodoro Timer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4F71639B18DCCB6F008EB38B /* Tomato TickerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F7163AF18DCCB6F008EB38B /* Build configuration list for PBXNativeTarget "Tomato TickerTests" */;
+			buildPhases = (
+				4F71639818DCCB6F008EB38B /* Sources */,
+				4F71639918DCCB6F008EB38B /* Frameworks */,
+				4F71639A18DCCB6F008EB38B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4F7163A118DCCB6F008EB38B /* PBXTargetDependency */,
+			);
+			name = "Tomato TickerTests";
+			productName = "Tomato TickerTests";
+			productReference = 4F71639C18DCCB6F008EB38B /* Tomato TickerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4F71637318DCCB6E008EB38B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TT;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Evan Lewis";
+				TargetAttributes = {
+					4F71637A18DCCB6E008EB38B = {
+						DevelopmentTeam = 7ZE54HDXZR;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
+					4F71639B18DCCB6F008EB38B = {
+						TestTargetID = 4F71637A18DCCB6E008EB38B;
+					};
+				};
+			};
+			buildConfigurationList = 4F71637618DCCB6E008EB38B /* Build configuration list for PBXProject "Tomato Ticker - The Pomodoro Timer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4F71637218DCCB6E008EB38B;
+			productRefGroup = 4F71637C18DCCB6E008EB38B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4F71637A18DCCB6E008EB38B /* Tomato Ticker - The Pomodoro Timer */,
+				4F71639B18DCCB6F008EB38B /* Tomato TickerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4F71637918DCCB6E008EB38B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F07B62218F4767D006D424F /* TimerDone.aif in Resources */,
+				4FFBEADD18DFB7C0001DC634 /* MainMenu.xib in Resources */,
+				4F07B62418F47727006D424F /* TimerDone2.aif in Resources */,
+				4F71639718DCCB6E008EB38B /* Images.xcassets in Resources */,
+				4F71638F18DCCB6E008EB38B /* Credits.rtf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F71639A18DCCB6F008EB38B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F7163A718DCCB6F008EB38B /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4F71637718DCCB6E008EB38B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F71639218DCCB6E008EB38B /* TTAppDelegate.m in Sources */,
+				4F9C66451A2EA56200083122 /* TTMenuController.m in Sources */,
+				4F71638B18DCCB6E008EB38B /* main.m in Sources */,
+				4F9C66481A2EADE800083122 /* TTMenuItem.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F71639818DCCB6F008EB38B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F7163A918DCCB6F008EB38B /* Tomato_TickerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4F7163A118DCCB6F008EB38B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4F71637A18DCCB6E008EB38B /* Tomato Ticker - The Pomodoro Timer */;
+			targetProxy = 4F7163A018DCCB6F008EB38B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4F71638D18DCCB6E008EB38B /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4F71638E18DCCB6E008EB38B /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		4F71639318DCCB6E008EB38B /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4F71639418DCCB6E008EB38B /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		4F7163A518DCCB6F008EB38B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4F7163A618DCCB6F008EB38B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4F7163AA18DCCB6F008EB38B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		4F7163AB18DCCB6F008EB38B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		4F7163AD18DCCB6F008EB38B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Tomato Ticker - The Pomodoro Timer.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tomato Ticker/Tomato Ticker-Prefix.pch";
+				INFOPLIST_FILE = "Tomato Ticker/Tomato Ticker-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_BUNDLE_IDENTIFIER = com.evanlewis.tomatoTicker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		4F7163AE18DCCB6F008EB38B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Tomato Ticker - The Pomodoro Timer.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tomato Ticker/Tomato Ticker-Prefix.pch";
+				INFOPLIST_FILE = "Tomato Ticker/Tomato Ticker-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_BUNDLE_IDENTIFIER = com.evanlewis.tomatoTicker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		4F7163B018DCCB6F008EB38B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Tomato Ticker.app/Contents/MacOS/Tomato Ticker";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tomato Ticker/Tomato Ticker-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Tomato TickerTests/Tomato TickerTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.evanlewis.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		4F7163B118DCCB6F008EB38B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Tomato Ticker.app/Contents/MacOS/Tomato Ticker";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tomato Ticker/Tomato Ticker-Prefix.pch";
+				INFOPLIST_FILE = "Tomato TickerTests/Tomato TickerTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.evanlewis.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4F71637618DCCB6E008EB38B /* Build configuration list for PBXProject "Tomato Ticker - The Pomodoro Timer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F7163AA18DCCB6F008EB38B /* Debug */,
+				4F7163AB18DCCB6F008EB38B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4F7163AC18DCCB6F008EB38B /* Build configuration list for PBXNativeTarget "Tomato Ticker - The Pomodoro Timer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F7163AD18DCCB6F008EB38B /* Debug */,
+				4F7163AE18DCCB6F008EB38B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4F7163AF18DCCB6F008EB38B /* Build configuration list for PBXNativeTarget "Tomato TickerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F7163B018DCCB6F008EB38B /* Debug */,
+				4F7163B118DCCB6F008EB38B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4F71637318DCCB6E008EB38B /* Project object */;
+}

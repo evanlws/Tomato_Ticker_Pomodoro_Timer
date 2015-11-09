@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "D7497A788F97DFCCAB205B64EA0504539EB55208",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "D7497A788F97DFCCAB205B64EA0504539EB55208" : 0,
+    "5CE70479CC7F892911207A31CC6FAA09519EAB6B" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "C75D101A-8609-4657-A363-F920F90F7AFD",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "D7497A788F97DFCCAB205B64EA0504539EB55208" : "Tomato%20Ticker%20-%20The%20Pomodoro%20Timer\/",
+    "5CE70479CC7F892911207A31CC6FAA09519EAB6B" : "Tomato-Ticker_The-Pomodoro-Timer"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Tomato Ticker - The Pomodoro Timer",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Tomato Ticker - The Pomodoro Timer.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/evanlws12\/Tomato-Ticker_The-Pomodoro-Timer.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "5CE70479CC7F892911207A31CC6FAA09519EAB6B"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/evanlws\/tomato-ticker-the-pomodoro-timer.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D7497A788F97DFCCAB205B64EA0504539EB55208"
+    }
+  ]
+}
