@@ -36,7 +36,7 @@
 /* Begin PBXFileReference section */
 		4F07B62118F4767D006D424F /* TimerDone.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = TimerDone.aif; sourceTree = "<group>"; };
 		4F07B62318F47727006D424F /* TimerDone2.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = TimerDone2.aif; sourceTree = "<group>"; };
-		4F71637B18DCCB6E008EB38B /* Tomato Ticker - The Pomodoro Timer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tomato Ticker - The Pomodoro Timer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F71637B18DCCB6E008EB38B /* Tomato Ticker - The Work Timer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tomato Ticker - The Work Timer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F71637E18DCCB6E008EB38B /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		4F71638118DCCB6E008EB38B /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		4F71638218DCCB6E008EB38B /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -96,7 +96,7 @@
 		4F71637C18DCCB6E008EB38B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4F71637B18DCCB6E008EB38B /* Tomato Ticker - The Pomodoro Timer.app */,
+				4F71637B18DCCB6E008EB38B /* Tomato Ticker - The Work Timer.app */,
 				4F71639C18DCCB6F008EB38B /* Tomato TickerTests.xctest */,
 			);
 			name = Products;
@@ -218,7 +218,7 @@
 			);
 			name = "Tomato Ticker - The Pomodoro Timer";
 			productName = "Tomato Ticker";
-			productReference = 4F71637B18DCCB6E008EB38B /* Tomato Ticker - The Pomodoro Timer.app */;
+			productReference = 4F71637B18DCCB6E008EB38B /* Tomato Ticker - The Work Timer.app */;
 			productType = "com.apple.product-type.application";
 		};
 		4F71639B18DCCB6F008EB38B /* Tomato TickerTests */ = {
@@ -246,7 +246,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = TT;
-				LastUpgradeCheck = 0710;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Evan Lewis";
 				TargetAttributes = {
 					4F71637A18DCCB6E008EB38B = {
@@ -375,14 +375,19 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -414,14 +419,19 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -447,7 +457,7 @@
 				INFOPLIST_FILE = "Tomato Ticker/Tomato Ticker-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_BUNDLE_IDENTIFIER = com.evanlewis.tomatoTicker;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Tomato Ticker - The Work Timer";
 				PROVISIONING_PROFILE = "";
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = app;
@@ -468,7 +478,7 @@
 				INFOPLIST_FILE = "Tomato Ticker/Tomato Ticker-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_BUNDLE_IDENTIFIER = com.evanlewis.tomatoTicker;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Tomato Ticker - The Work Timer";
 				PROVISIONING_PROFILE = "";
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = app;
