@@ -1,6 +1,7 @@
+# Sample branch
+#
 # Xcode
 #
-# gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
 
 ## Build generated
 build/
@@ -16,6 +17,13 @@ DerivedData
 *.perspectivev3
 !default.perspectivev3
 xcuserdata
+*.lproj
+*.xcodeproj
+*.plist
+*.pch
+*.json
+/*.xcassets
+*.entitlements
 
 ## Other
 *.xccheckout
