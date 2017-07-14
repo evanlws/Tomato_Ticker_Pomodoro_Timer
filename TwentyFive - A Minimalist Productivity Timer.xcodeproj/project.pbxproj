@@ -10,15 +10,25 @@
 		4F44D3D21F1951DD00B98FFC /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F44D3C21F1951DD00B98FFC /* MainMenu.xib */; };
 		4F44D3D31F1951DD00B98FFC /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 4F44D3C41F1951DD00B98FFC /* Credits.rtf */; };
 		4F44D3D41F1951DD00B98FFC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F44D3C61F1951DD00B98FFC /* Images.xcassets */; };
-		4F44D3D51F1951DD00B98FFC /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4F44D3C71F1951DD00B98FFC /* Info.plist */; };
 		4F44D3D61F1951DD00B98FFC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F44D3C81F1951DD00B98FFC /* main.m */; };
 		4F44D3D71F1951DD00B98FFC /* TimerDone.aif in Resources */ = {isa = PBXBuildFile; fileRef = 4F44D3C91F1951DD00B98FFC /* TimerDone.aif */; };
 		4F44D3D81F1951DD00B98FFC /* TimerDone2.aif in Resources */ = {isa = PBXBuildFile; fileRef = 4F44D3CA1F1951DD00B98FFC /* TimerDone2.aif */; };
 		4F44D3D91F1951DD00B98FFC /* TTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F44D3CD1F1951DD00B98FFC /* TTAppDelegate.m */; };
 		4F44D3DA1F1951DD00B98FFC /* TTMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F44D3CF1F1951DD00B98FFC /* TTMenuController.m */; };
 		4F44D3DB1F1951DD00B98FFC /* TTMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F44D3D11F1951DD00B98FFC /* TTMenuItem.m */; };
+		4F44D3F11F1958DA00B98FFC /* Twenty_Five_Timer_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F44D3F01F1958DA00B98FFC /* Twenty_Five_Timer_Tests.m */; };
 		4F71637F18DCCB6E008EB38B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F71637E18DCCB6E008EB38B /* Cocoa.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4F44D3F31F1958DA00B98FFC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F71637318DCCB6E008EB38B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4F71637A18DCCB6E008EB38B;
+			remoteInfo = "TwentyFive - A Minimalist Productivity Timerr";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		4F44D3C31F1951DD00B98FFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
@@ -28,14 +38,18 @@
 		4F44D3C81F1951DD00B98FFC /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4F44D3C91F1951DD00B98FFC /* TimerDone.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = TimerDone.aif; sourceTree = "<group>"; };
 		4F44D3CA1F1951DD00B98FFC /* TimerDone2.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = TimerDone2.aif; sourceTree = "<group>"; };
-		4F44D3CB1F1951DD00B98FFC /* Tomato Ticker-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Tomato Ticker-Prefix.pch"; sourceTree = "<group>"; };
+		4F44D3CB1F1951DD00B98FFC /* Twenty Five-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Twenty Five-Prefix.pch"; sourceTree = "<group>"; };
 		4F44D3CC1F1951DD00B98FFC /* TTAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTAppDelegate.h; sourceTree = "<group>"; };
 		4F44D3CD1F1951DD00B98FFC /* TTAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTAppDelegate.m; sourceTree = "<group>"; };
 		4F44D3CE1F1951DD00B98FFC /* TTMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTMenuController.h; sourceTree = "<group>"; };
 		4F44D3CF1F1951DD00B98FFC /* TTMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTMenuController.m; sourceTree = "<group>"; };
 		4F44D3D01F1951DD00B98FFC /* TTMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTMenuItem.h; sourceTree = "<group>"; };
 		4F44D3D11F1951DD00B98FFC /* TTMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTMenuItem.m; sourceTree = "<group>"; };
-		4F71637B18DCCB6E008EB38B /* Tomato Ticker - The Work Timer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tomato Ticker - The Work Timer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F44D3EE1F1958DA00B98FFC /* Twenty Five Timer Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Twenty Five Timer Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F44D3F01F1958DA00B98FFC /* Twenty_Five_Timer_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Twenty_Five_Timer_Tests.m; sourceTree = "<group>"; };
+		4F44D3F21F1958DA00B98FFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F44D3FD1F195A0C00B98FFC /* Twenty Five - A Minimalist Productivity Timer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Twenty Five - A Minimalist Productivity Timer.entitlements"; sourceTree = "<group>"; };
+		4F71637B18DCCB6E008EB38B /* Twenty Five - A Minimalist Productivity Timer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Twenty Five - A Minimalist Productivity Timer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F71637E18DCCB6E008EB38B /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		4F71638118DCCB6E008EB38B /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		4F71638218DCCB6E008EB38B /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -44,6 +58,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		4F44D3EB1F1958DA00B98FFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4F71637818DCCB6E008EB38B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -58,28 +79,72 @@
 		4F44D3C11F1951DD00B98FFC /* Twenty Five */ = {
 			isa = PBXGroup;
 			children = (
+				4F44D3F81F1958FA00B98FFC /* View */,
+				4F44D3FA1F19590D00B98FFC /* Controller */,
+				4F44D3F91F19590700B98FFC /* Model */,
+			);
+			path = "Twenty Five";
+			sourceTree = "<group>";
+		};
+		4F44D3EF1F1958DA00B98FFC /* Twenty Five Timer Tests */ = {
+			isa = PBXGroup;
+			children = (
+				4F44D3F01F1958DA00B98FFC /* Twenty_Five_Timer_Tests.m */,
+				4F44D3F21F1958DA00B98FFC /* Info.plist */,
+			);
+			path = "Twenty Five Timer Tests";
+			sourceTree = "<group>";
+		};
+		4F44D3F81F1958FA00B98FFC /* View */ = {
+			isa = PBXGroup;
+			children = (
 				4F44D3C21F1951DD00B98FFC /* MainMenu.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		4F44D3F91F19590700B98FFC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4F44D3D01F1951DD00B98FFC /* TTMenuItem.h */,
+				4F44D3D11F1951DD00B98FFC /* TTMenuItem.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		4F44D3FA1F19590D00B98FFC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4F44D3CC1F1951DD00B98FFC /* TTAppDelegate.h */,
+				4F44D3CD1F1951DD00B98FFC /* TTAppDelegate.m */,
+				4F44D3CE1F1951DD00B98FFC /* TTMenuController.h */,
+				4F44D3CF1F1951DD00B98FFC /* TTMenuController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		4F44D3FB1F19591300B98FFC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
 				4F44D3C41F1951DD00B98FFC /* Credits.rtf */,
 				4F44D3C61F1951DD00B98FFC /* Images.xcassets */,
 				4F44D3C71F1951DD00B98FFC /* Info.plist */,
 				4F44D3C81F1951DD00B98FFC /* main.m */,
 				4F44D3C91F1951DD00B98FFC /* TimerDone.aif */,
 				4F44D3CA1F1951DD00B98FFC /* TimerDone2.aif */,
-				4F44D3CB1F1951DD00B98FFC /* Tomato Ticker-Prefix.pch */,
-				4F44D3CC1F1951DD00B98FFC /* TTAppDelegate.h */,
-				4F44D3CD1F1951DD00B98FFC /* TTAppDelegate.m */,
-				4F44D3CE1F1951DD00B98FFC /* TTMenuController.h */,
-				4F44D3CF1F1951DD00B98FFC /* TTMenuController.m */,
-				4F44D3D01F1951DD00B98FFC /* TTMenuItem.h */,
-				4F44D3D11F1951DD00B98FFC /* TTMenuItem.m */,
+				4F44D3CB1F1951DD00B98FFC /* Twenty Five-Prefix.pch */,
 			);
+			name = "Supporting Files";
 			path = "Twenty Five";
 			sourceTree = "<group>";
 		};
 		4F71637218DCCB6E008EB38B = {
 			isa = PBXGroup;
 			children = (
+				4F44D3FD1F195A0C00B98FFC /* Twenty Five - A Minimalist Productivity Timer.entitlements */,
 				4F44D3C11F1951DD00B98FFC /* Twenty Five */,
+				4F44D3FB1F19591300B98FFC /* Supporting Files */,
+				4F44D3EF1F1958DA00B98FFC /* Twenty Five Timer Tests */,
 				4F71637D18DCCB6E008EB38B /* Frameworks */,
 				4F71637C18DCCB6E008EB38B /* Products */,
 			);
@@ -88,7 +153,8 @@
 		4F71637C18DCCB6E008EB38B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4F71637B18DCCB6E008EB38B /* Tomato Ticker - The Work Timer.app */,
+				4F71637B18DCCB6E008EB38B /* Twenty Five - A Minimalist Productivity Timer.app */,
+				4F44D3EE1F1958DA00B98FFC /* Twenty Five Timer Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -116,6 +182,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		4F44D3ED1F1958DA00B98FFC /* Twenty Five Timer Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F44D3F51F1958DA00B98FFC /* Build configuration list for PBXNativeTarget "Twenty Five Timer Tests" */;
+			buildPhases = (
+				4F44D3EA1F1958DA00B98FFC /* Sources */,
+				4F44D3EB1F1958DA00B98FFC /* Frameworks */,
+				4F44D3EC1F1958DA00B98FFC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4F44D3F41F1958DA00B98FFC /* PBXTargetDependency */,
+			);
+			name = "Twenty Five Timer Tests";
+			productName = "Twenty Five Timer Tests";
+			productReference = 4F44D3EE1F1958DA00B98FFC /* Twenty Five Timer Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		4F71637A18DCCB6E008EB38B /* TwentyFive - A Minimalist Productivity Timerr */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4F7163AC18DCCB6F008EB38B /* Build configuration list for PBXNativeTarget "TwentyFive - A Minimalist Productivity Timerr" */;
@@ -130,7 +214,7 @@
 			);
 			name = "TwentyFive - A Minimalist Productivity Timerr";
 			productName = "Tomato Ticker";
-			productReference = 4F71637B18DCCB6E008EB38B /* Tomato Ticker - The Work Timer.app */;
+			productReference = 4F71637B18DCCB6E008EB38B /* Twenty Five - A Minimalist Productivity Timer.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -140,14 +224,22 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = TT;
+				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Evan Lewis";
 				TargetAttributes = {
+					4F44D3ED1F1958DA00B98FFC = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 7ZE54HDXZR;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 4F71637A18DCCB6E008EB38B;
+					};
 					4F71637A18DCCB6E008EB38B = {
+						DevelopmentTeam = 7ZE54HDXZR;
 						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.Sandbox = {
-								enabled = 0;
+								enabled = 1;
 							};
 						};
 					};
@@ -167,17 +259,24 @@
 			projectRoot = "";
 			targets = (
 				4F71637A18DCCB6E008EB38B /* TwentyFive - A Minimalist Productivity Timerr */,
+				4F44D3ED1F1958DA00B98FFC /* Twenty Five Timer Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		4F44D3EC1F1958DA00B98FFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4F71637918DCCB6E008EB38B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				4F44D3D41F1951DD00B98FFC /* Images.xcassets in Resources */,
-				4F44D3D51F1951DD00B98FFC /* Info.plist in Resources */,
 				4F44D3D71F1951DD00B98FFC /* TimerDone.aif in Resources */,
 				4F44D3D81F1951DD00B98FFC /* TimerDone2.aif in Resources */,
 				4F44D3D31F1951DD00B98FFC /* Credits.rtf in Resources */,
@@ -188,6 +287,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		4F44D3EA1F1958DA00B98FFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F44D3F11F1958DA00B98FFC /* Twenty_Five_Timer_Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4F71637718DCCB6E008EB38B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -200,6 +307,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4F44D3F41F1958DA00B98FFC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4F71637A18DCCB6E008EB38B /* TwentyFive - A Minimalist Productivity Timerr */;
+			targetProxy = 4F44D3F31F1958DA00B98FFC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		4F44D3C21F1951DD00B98FFC /* MainMenu.xib */ = {
@@ -221,6 +336,50 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		4F44D3F61F1958DA00B98FFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 7ZE54HDXZR;
+				INFOPLIST_FILE = "Twenty Five Timer Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.evanlewis.Twenty-Five-Timer-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tomato Ticker - The Work Timer.app/Contents/MacOS/Tomato Ticker - The Work Timer";
+			};
+			name = Debug;
+		};
+		4F44D3F71F1958DA00B98FFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = 7ZE54HDXZR;
+				INFOPLIST_FILE = "Twenty Five Timer Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.evanlewis.Twenty-Five-Timer-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tomato Ticker - The Work Timer.app/Contents/MacOS/Tomato Ticker - The Work Timer";
+			};
+			name = Release;
+		};
 		4F7163AA18DCCB6F008EB38B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -306,17 +465,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Twenty Five - A Minimalist Productivity Timer.entitlements";
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 7ZE54HDXZR;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Tomato Ticker/Tomato Ticker-Prefix.pch";
+				GCC_PREFIX_HEADER = "Twenty Five/Twenty Five-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/Twenty Five/Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.evanlewis.twenty-five-mac";
-				PRODUCT_NAME = "Tomato Ticker - The Work Timer";
+				PRODUCT_NAME = "Twenty Five - A Minimalist Productivity Timer";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
@@ -328,17 +488,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Twenty Five - A Minimalist Productivity Timer.entitlements";
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 7ZE54HDXZR;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Tomato Ticker/Tomato Ticker-Prefix.pch";
+				GCC_PREFIX_HEADER = "Twenty Five/Twenty Five-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/Twenty Five/Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.evanlewis.twenty-five-mac";
-				PRODUCT_NAME = "Tomato Ticker - The Work Timer";
+				PRODUCT_NAME = "Twenty Five - A Minimalist Productivity Timer";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
@@ -349,6 +510,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		4F44D3F51F1958DA00B98FFC /* Build configuration list for PBXNativeTarget "Twenty Five Timer Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F44D3F61F1958DA00B98FFC /* Debug */,
+				4F44D3F71F1958DA00B98FFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		4F71637618DCCB6E008EB38B /* Build configuration list for PBXProject "TwentyFive - A Minimalist Productivity Timer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
