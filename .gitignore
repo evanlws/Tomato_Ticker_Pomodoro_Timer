@@ -24,6 +24,11 @@ xcuserdata
 *.json
 /*.xcassets
 *.entitlements
+*.xib
+/main.m
+/TimerDone.aif
+/TimerDone2.aif
+*.framework
 
 ## Other
 *.xccheckout
