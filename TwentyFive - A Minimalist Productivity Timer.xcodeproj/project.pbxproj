@@ -17,6 +17,8 @@
 		4F44D3DA1F1951DD00B98FFC /* TTMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F44D3CF1F1951DD00B98FFC /* TTMenuController.m */; };
 		4F44D3DB1F1951DD00B98FFC /* TTMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F44D3D11F1951DD00B98FFC /* TTMenuItem.m */; };
 		4F44D3F11F1958DA00B98FFC /* Twenty_Five_Timer_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F44D3F01F1958DA00B98FFC /* Twenty_Five_Timer_Tests.m */; };
+		4F44D4011F195AE600B98FFC /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F44D3FF1F195AE600B98FFC /* Fabric.framework */; };
+		4F44D4021F195AE600B98FFC /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F44D4001F195AE600B98FFC /* Crashlytics.framework */; };
 		4F71637F18DCCB6E008EB38B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F71637E18DCCB6E008EB38B /* Cocoa.framework */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +51,8 @@
 		4F44D3F01F1958DA00B98FFC /* Twenty_Five_Timer_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Twenty_Five_Timer_Tests.m; sourceTree = "<group>"; };
 		4F44D3F21F1958DA00B98FFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4F44D3FD1F195A0C00B98FFC /* Twenty Five - A Minimalist Productivity Timer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Twenty Five - A Minimalist Productivity Timer.entitlements"; sourceTree = "<group>"; };
+		4F44D3FF1F195AE600B98FFC /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		4F44D4001F195AE600B98FFC /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		4F71637B18DCCB6E008EB38B /* Twenty Five - A Minimalist Productivity Timer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Twenty Five - A Minimalist Productivity Timer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F71637E18DCCB6E008EB38B /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		4F71638118DCCB6E008EB38B /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -70,6 +74,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F71637F18DCCB6E008EB38B /* Cocoa.framework in Frameworks */,
+				4F44D4021F195AE600B98FFC /* Crashlytics.framework in Frameworks */,
+				4F44D4011F195AE600B98FFC /* Fabric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,6 +168,8 @@
 		4F71637D18DCCB6E008EB38B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4F44D3FF1F195AE600B98FFC /* Fabric.framework */,
+				4F44D4001F195AE600B98FFC /* Crashlytics.framework */,
 				4F71637E18DCCB6E008EB38B /* Cocoa.framework */,
 				4F71639D18DCCB6F008EB38B /* XCTest.framework */,
 				4F71638018DCCB6E008EB38B /* Other Frameworks */,
@@ -207,6 +215,7 @@
 				4F71637718DCCB6E008EB38B /* Sources */,
 				4F71637818DCCB6E008EB38B /* Frameworks */,
 				4F71637918DCCB6E008EB38B /* Resources */,
+				4F44D3FE1F195AD000B98FFC /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -285,6 +294,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4F44D3FE1F195AD000B98FFC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run 2dc7fcb0503f1e8d4ab624535a9f5d48db7d596a b9a9b1123a61d00895b7f4d3986f94eb8059971ecb398ac16a006ae6182a1af2";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4F44D3EA1F1958DA00B98FFC /* Sources */ = {
@@ -471,6 +496,10 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = 7ZE54HDXZR;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Twenty Five/Twenty Five-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/Twenty Five/Info.plist";
@@ -494,6 +523,10 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = 7ZE54HDXZR;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Twenty Five/Twenty Five-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/Twenty Five/Info.plist";

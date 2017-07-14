@@ -8,6 +8,8 @@
 
 #import "TTMenuItem.h"
 #import "TTMenuController.h"
+#import <Fabric/Fabric.h>
+#import <Crashlytics/Crashlytics.h>
 
 typedef NS_OPTIONS(NSUInteger, TimerType) {
     workingTime = 1 << 0,
@@ -38,7 +40,9 @@ typedef NS_OPTIONS(NSUInteger, TimerType) {
 @implementation TTMenuController
 
 - (void)awakeFromNib {
-    
+	[[NSUserDefaults standardUserDefaults] registerDefaults:@{ @"NSApplicationCrashOnExceptions": @YES }];
+	[Fabric with:@[[Crashlytics class]]];
+
     //Status Bar Initialization
     _statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
     self.statusItem.menu = self;
@@ -56,13 +60,13 @@ typedef NS_OPTIONS(NSUInteger, TimerType) {
     _timerStarted = NO;
     _timerType = workingTime;
     _breakString = @"";
-    
+
 }
 
 #pragma mark Timer Methods
 
 - (void)updateTimer {
-    
+
     if (self.counter > 0) {
         int minutes = self.counter/60;
         int seconds = self.counter - (minutes  *60);
