@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6254"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NSApplication"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customObject id="Voe-Tx-rLC" customClass="TTAppDelegate"/>
+        <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
+        <menu id="AxR-Zx-4iX" customClass="TTMenuController">
+            <items>
+                <menuItem title="Start Timer" id="qms-ql-h0j">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="startTimer:" target="AxR-Zx-4iX" id="aKp-xD-VnN"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Stop Timer" id="v7U-Ls-Efk">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="stopTimer:" target="AxR-Zx-4iX" id="KR3-aK-JmI"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Work Time" id="kBq-Hq-nSu">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="Work Time" id="Y1m-If-hnB">
+                        <items>
+                            <menuItem title="5 minutes" id="Yco-6b-JRj" customClass="TTMenuItem">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="timeValue">
+                                        <integer key="value" value="300"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="workMenuItemSelected:" target="AxR-Zx-4iX" id="XXr-GT-aT7"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="10 minutes" id="UJb-yN-GTe" customClass="TTMenuItem">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="timeValue">
+                                        <integer key="value" value="600"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="workMenuItemSelected:" target="AxR-Zx-4iX" id="KAZ-b8-QqM"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="15 minutes" id="NvQ-jM-NnV" customClass="TTMenuItem">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="timeValue">
+                                        <integer key="value" value="900"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="workMenuItemSelected:" target="AxR-Zx-4iX" id="Swx-dr-Tug"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="20 minutes" id="hkN-Kx-ZP5" customClass="TTMenuItem">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="timeValue">
+                                        <integer key="value" value="1200"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="workMenuItemSelected:" target="AxR-Zx-4iX" id="cTt-uc-xBB"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="25 minutes" id="C9D-DS-j9E" customClass="TTMenuItem">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="timeValue">
+                                        <integer key="value" value="1500"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="workMenuItemSelected:" target="AxR-Zx-4iX" id="67a-8T-M8X"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="30 minutes" id="Sh9-sG-NiZ" customClass="TTMenuItem">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="timeValue">
+                                        <integer key="value" value="1800"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="workMenuItemSelected:" target="AxR-Zx-4iX" id="65e-ga-shb"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="35 minutes" id="guE-Wy-E28" customClass="TTMenuItem">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="timeValue">
+                                        <integer key="value" value="2100"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="workMenuItemSelected:" target="AxR-Zx-4iX" id="J6s-FT-zip"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="40 minutes" id="74q-fp-v3o" customClass="TTMenuItem">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="timeValue">
+                                        <integer key="value" value="2400"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="workMenuItemSelected:" target="AxR-Zx-4iX" id="PIa-ab-eHS"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="45 minutes" id="IV6-Tt-Zrs" customClass="TTMenuItem">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="timeValue">
+                                        <integer key="value" value="2700"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="workMenuItemSelected:" target="AxR-Zx-4iX" id="Zzv-o9-d3J"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="50 minutes" id="IUc-zL-Mzk" customClass="TTMenuItem">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="timeValue">
+                                        <integer key="value" value="3000"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="workMenuItemSelected:" target="AxR-Zx-4iX" id="5DD-xa-hJI"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="55 minutes" id="kGL-pD-ep2" customClass="TTMenuItem">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="timeValue">
+                                        <integer key="value" value="3300"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="workMenuItemSelected:" target="AxR-Zx-4iX" id="L1Q-31-u6l"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="1 hour" id="N5t-S5-Y4v" customClass="TTMenuItem">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="timeValue">
+                                        <integer key="value" value="3600"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="workMenuItemSelected:" target="AxR-Zx-4iX" id="h5D-9B-Uo7"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="Short Break Time" id="HzQ-kr-joX">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="Short Break Time" id="nda-Am-UNz">
+                        <items>
+                            <menuItem title="5 minutes" id="HZe-PN-UjO" customClass="TTMenuItem">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="timeValue">
+                                        <integer key="value" value="300"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="breakMenuItemSelected:" target="AxR-Zx-4iX" id="w7v-P2-Rhw"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="10 minutes" id="Puk-Dc-fEQ" customClass="TTMenuItem">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="timeValue">
+                                        <integer key="value" value="600"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="breakMenuItemSelected:" target="AxR-Zx-4iX" id="cTX-cE-eG4"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="15 minutes" id="LUy-Ip-Ewj" customClass="TTMenuItem">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="timeValue">
+                                        <integer key="value" value="900"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="breakMenuItemSelected:" target="AxR-Zx-4iX" id="zeg-7U-IQO"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="20 minutes" id="Vjs-rs-Oq4" customClass="TTMenuItem">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="timeValue">
+                                        <integer key="value" value="1200"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="breakMenuItemSelected:" target="AxR-Zx-4iX" id="3E1-qZ-IiM"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="25 minutes" id="fsm-5x-bOv" customClass="TTMenuItem">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="timeValue">
+                                        <integer key="value" value="1500"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="breakMenuItemSelected:" target="AxR-Zx-4iX" id="VB7-be-TUb"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="30 minutes" id="brH-Pv-lfi" customClass="TTMenuItem">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="timeValue">
+                                        <integer key="value" value="1800"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="breakMenuItemSelected:" target="AxR-Zx-4iX" id="B54-6e-PSF"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="End after work" id="EbD-7S-2IR" customClass="TTMenuItem">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="timeValue">
+                                        <integer key="value" value="-2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="breakMenuItemSelected:" target="AxR-Zx-4iX" id="WwL-Rn-Ubj"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="Long Break Time" id="gmD-D8-0w6">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="Long Break Time" id="i7Y-4s-rud">
+                        <items>
+                            <menuItem title="5 minutes" id="d2R-6E-GVO" customClass="TTMenuItem">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="timeValue">
+                                        <integer key="value" value="300"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="longBreakMenuItemSelected:" target="AxR-Zx-4iX" id="bJT-TL-dRm"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="10 minutes" id="j5O-uD-BqX" customClass="TTMenuItem">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="timeValue">
+                                        <integer key="value" value="600"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="longBreakMenuItemSelected:" target="AxR-Zx-4iX" id="mJE-Ar-SFm"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="15 minutes" id="PLb-55-8iU" customClass="TTMenuItem">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="timeValue">
+                                        <integer key="value" value="900"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="longBreakMenuItemSelected:" target="AxR-Zx-4iX" id="iTQ-F8-kve"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="20 minutes" id="gfm-VG-RMT" customClass="TTMenuItem">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="timeValue">
+                                        <integer key="value" value="1200"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="longBreakMenuItemSelected:" target="AxR-Zx-4iX" id="3Wb-SX-uti"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="25 minutes" id="ZjV-xO-czj" customClass="TTMenuItem">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="timeValue">
+                                        <integer key="value" value="1500"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="longBreakMenuItemSelected:" target="AxR-Zx-4iX" id="LtG-B2-DRq"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="30 minutes" id="U6h-EN-ryf" customClass="TTMenuItem">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="timeValue">
+                                        <integer key="value" value="1800"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="longBreakMenuItemSelected:" target="AxR-Zx-4iX" id="giD-Ev-rVH"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="Quit" id="Xjx-i9-tqQ">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="terminate:" target="-1" id="NNu-Vq-Y6J"/>
+                    </connections>
+                </menuItem>
+            </items>
+            <connections>
+                <outlet property="breakMenu" destination="nda-Am-UNz" id="iGz-gK-nXd"/>
+                <outlet property="delegate" destination="-2" id="bik-rR-Hun"/>
+                <outlet property="longBreakMenu" destination="i7Y-4s-rud" id="aYW-t9-lpw"/>
+                <outlet property="workMenu" destination="Y1m-If-hnB" id="H1g-Wz-cB6"/>
+            </connections>
+        </menu>
+    </objects>
+</document>
