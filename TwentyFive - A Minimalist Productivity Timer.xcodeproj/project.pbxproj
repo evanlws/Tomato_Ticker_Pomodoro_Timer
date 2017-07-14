@@ -204,9 +204,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4F71637A18DCCB6E008EB38B /* Tomato Ticker - The Pomodoro Timer */ = {
+		4F71637A18DCCB6E008EB38B /* TwentyFive - A Minimalist Productivity Timerr */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4F7163AC18DCCB6F008EB38B /* Build configuration list for PBXNativeTarget "Tomato Ticker - The Pomodoro Timer" */;
+			buildConfigurationList = 4F7163AC18DCCB6F008EB38B /* Build configuration list for PBXNativeTarget "TwentyFive - A Minimalist Productivity Timerr" */;
 			buildPhases = (
 				4F71637718DCCB6E008EB38B /* Sources */,
 				4F71637818DCCB6E008EB38B /* Frameworks */,
@@ -216,7 +216,7 @@
 			);
 			dependencies = (
 			);
-			name = "Tomato Ticker - The Pomodoro Timer";
+			name = "TwentyFive - A Minimalist Productivity Timerr";
 			productName = "Tomato Ticker";
 			productReference = 4F71637B18DCCB6E008EB38B /* Tomato Ticker - The Work Timer.app */;
 			productType = "com.apple.product-type.application";
@@ -251,6 +251,7 @@
 				TargetAttributes = {
 					4F71637A18DCCB6E008EB38B = {
 						DevelopmentTeam = 7ZE54HDXZR;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Sandbox = {
 								enabled = 1;
@@ -262,7 +263,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 4F71637618DCCB6E008EB38B /* Build configuration list for PBXProject "Tomato Ticker - The Pomodoro Timer" */;
+			buildConfigurationList = 4F71637618DCCB6E008EB38B /* Build configuration list for PBXProject "TwentyFive - A Minimalist Productivity Timer" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -275,7 +276,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4F71637A18DCCB6E008EB38B /* Tomato Ticker - The Pomodoro Timer */,
+				4F71637A18DCCB6E008EB38B /* TwentyFive - A Minimalist Productivity Timerr */,
 				4F71639B18DCCB6F008EB38B /* Tomato TickerTests */,
 			);
 		};
@@ -329,7 +330,7 @@
 /* Begin PBXTargetDependency section */
 		4F7163A118DCCB6F008EB38B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 4F71637A18DCCB6E008EB38B /* Tomato Ticker - The Pomodoro Timer */;
+			target = 4F71637A18DCCB6E008EB38B /* TwentyFive - A Minimalist Productivity Timerr */;
 			targetProxy = 4F7163A018DCCB6F008EB38B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -452,6 +453,7 @@
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 7ZE54HDXZR;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tomato Ticker/Tomato Ticker-Prefix.pch";
 				INFOPLIST_FILE = "Tomato Ticker/Tomato Ticker-Info.plist";
@@ -459,6 +461,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.evanlewis.tomatoTicker;
 				PRODUCT_NAME = "Tomato Ticker - The Work Timer";
 				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = app;
 			};
@@ -473,6 +476,7 @@
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 7ZE54HDXZR;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tomato Ticker/Tomato Ticker-Prefix.pch";
 				INFOPLIST_FILE = "Tomato Ticker/Tomato Ticker-Info.plist";
@@ -480,6 +484,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.evanlewis.tomatoTicker;
 				PRODUCT_NAME = "Tomato Ticker - The Work Timer";
 				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = app;
 			};
@@ -530,7 +535,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4F71637618DCCB6E008EB38B /* Build configuration list for PBXProject "Tomato Ticker - The Pomodoro Timer" */ = {
+		4F71637618DCCB6E008EB38B /* Build configuration list for PBXProject "TwentyFive - A Minimalist Productivity Timer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4F7163AA18DCCB6F008EB38B /* Debug */,
@@ -539,7 +544,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4F7163AC18DCCB6F008EB38B /* Build configuration list for PBXNativeTarget "Tomato Ticker - The Pomodoro Timer" */ = {
+		4F7163AC18DCCB6F008EB38B /* Build configuration list for PBXNativeTarget "TwentyFive - A Minimalist Productivity Timerr" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4F7163AD18DCCB6F008EB38B /* Debug */,

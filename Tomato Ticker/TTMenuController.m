@@ -43,15 +43,10 @@ typedef NS_OPTIONS(NSUInteger, TimerType) {
     _statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
     self.statusItem.menu = self;
     [NSUserNotificationCenter defaultUserNotificationCenter].delegate = self;
-    NSImage *statusBarImage = [NSImage imageNamed:@"Tomato"];
-    BOOL dinosaur = (floor(NSAppKitVersionNumber) <= NSAppKitVersionNumber10_9);
-    if (!dinosaur)
-    {
-        // 10.10 or higher, so setTemplate: is safe
-        statusBarImage.template = YES;
-    }
+    NSImage *statusBarImage = [NSImage imageNamed:@"clock"];
+
     self.statusItem.image = statusBarImage;
-    self.statusItem.alternateImage = [NSImage imageNamed:@"TomatoSelected"];
+	self.statusItem.alternateImage = [NSImage imageNamed: @"clock_selected"];
     
     //Set the timers to their default
     [self workMenuItemSelected:(TTMenuItem*)[self.workMenu itemAtIndex:4]];
