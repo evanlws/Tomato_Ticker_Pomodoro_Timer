@@ -1,6 +1,6 @@
 //
 //  TTMenuController.m
-//  Tomato Ticker - The Pomodoro Timer
+//  TwentyFive - A Minimalist Productivity Timer
 //
 //  Created by Evan Lewis on 12/2/14.
 //  Copyright (c) 2014 Evan Lewis. All rights reserved.
@@ -8,6 +8,8 @@
 
 #import "TTMenuItem.h"
 #import "TTMenuController.h"
+#import <Fabric/Fabric.h>
+#import <Crashlytics/Crashlytics.h>
 
 typedef NS_OPTIONS(NSUInteger, TimerType) {
     workingTime = 1 << 0,
@@ -38,7 +40,10 @@ typedef NS_OPTIONS(NSUInteger, TimerType) {
 @implementation TTMenuController
 
 - (void)awakeFromNib {
-    
+	[[NSUserDefaults standardUserDefaults] registerDefaults:@{ @"NSApplicationCrashOnExceptions": @YES }];
+	[Fabric with:@[[Crashlytics class]]];
+
+
     //Status Bar Initialization
     _statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
     self.statusItem.menu = self;
@@ -56,13 +61,13 @@ typedef NS_OPTIONS(NSUInteger, TimerType) {
     _timerStarted = NO;
     _timerType = workingTime;
     _breakString = @"";
-    
+
 }
 
 #pragma mark Timer Methods
 
 - (void)updateTimer {
-    
+
     if (self.counter > 0) {
         int minutes = self.counter/60;
         int seconds = self.counter - (minutes  *60);
@@ -94,8 +99,9 @@ typedef NS_OPTIONS(NSUInteger, TimerType) {
                 NSUserNotification *notification = [[NSUserNotification alloc] init];
                 notification.title = @"Timer is done!";
                 notification.soundName = @"TimerDone.aif";
-                
+
                 [[NSUserNotificationCenter defaultUserNotificationCenter] deliverNotification:notification];
+				[Answers logCustomEventWithName:@"Timer finished" customAttributes: @{}];
             }
         }
             break;
@@ -126,6 +132,7 @@ typedef NS_OPTIONS(NSUInteger, TimerType) {
                                                 selector:@selector(updateTimer)
                                                 userInfo: nil
                                                  repeats:YES];
+		[self logEvent:@"Break Time Started" withTime:self.counter];
     }
     
 }
@@ -142,6 +149,7 @@ typedef NS_OPTIONS(NSUInteger, TimerType) {
                                                 selector:@selector(updateTimer)
                                                 userInfo: nil
                                                  repeats:YES];
+		[self logEvent:@"Long Break Time Started" withTime:self.counter];
     }
     
 }
@@ -160,6 +168,8 @@ typedef NS_OPTIONS(NSUInteger, TimerType) {
                                                 selector:@selector(updateTimer)
                                                 userInfo: nil
                                                  repeats:YES];
+
+		[self logEvent:@"Work Time Started" withTime:self.counter];
     }
     
 }
@@ -195,6 +205,13 @@ typedef NS_OPTIONS(NSUInteger, TimerType) {
         menuItem.state = NSOffState;
     }
     sender.state = NSOnState;
+}
+
+- (void)logEvent:(NSString *)event withTime:(int)timeCounter {
+	int minutes = timeCounter / 60;
+	int seconds = timeCounter - (minutes  * 60);
+	NSString *setTimer = [NSString stringWithFormat:@"%2d:%.2d", minutes, seconds];
+	[Answers logCustomEventWithName:event customAttributes: @{@"Timer Set": setTimer}];
 }
 
 #pragma mark NotificationCenter
