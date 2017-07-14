@@ -3,6 +3,24 @@
 # Xcode
 #
 
+xcuserdata
+*.lproj
+*.xcodeproj
+*.plist
+*.pch
+*.json
+/*.xcassets
+*.entitlements
+*.xib
+Twenty Five/main.m
+Twenty Five/TimerDone.aif
+Twenty Five/TimerDone2.aif
+Twenty Five/*.plist
+Twenty Five/*.pch
+Twenty Five/*.lproj/
+Twenty Five/*.xcassets
+*.framework
+
 ## Build generated
 build/
 DerivedData
@@ -16,19 +34,6 @@ DerivedData
 !default.mode2v3
 *.perspectivev3
 !default.perspectivev3
-xcuserdata
-*.lproj
-*.xcodeproj
-*.plist
-*.pch
-*.json
-/*.xcassets
-*.entitlements
-*.xib
-/main.m
-/TimerDone.aif
-/TimerDone2.aif
-*.framework
 
 ## Other
 *.xccheckout
