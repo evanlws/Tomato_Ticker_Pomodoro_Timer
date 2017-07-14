@@ -43,6 +43,7 @@ typedef NS_OPTIONS(NSUInteger, TimerType) {
 	[[NSUserDefaults standardUserDefaults] registerDefaults:@{ @"NSApplicationCrashOnExceptions": @YES }];
 	[Fabric with:@[[Crashlytics class]]];
 
+
     //Status Bar Initialization
     _statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
     self.statusItem.menu = self;
@@ -98,8 +99,9 @@ typedef NS_OPTIONS(NSUInteger, TimerType) {
                 NSUserNotification *notification = [[NSUserNotification alloc] init];
                 notification.title = @"Timer is done!";
                 notification.soundName = @"TimerDone.aif";
-                
+
                 [[NSUserNotificationCenter defaultUserNotificationCenter] deliverNotification:notification];
+				[Answers logCustomEventWithName:@"Timer finished" customAttributes: @{}];
             }
         }
             break;
@@ -130,6 +132,7 @@ typedef NS_OPTIONS(NSUInteger, TimerType) {
                                                 selector:@selector(updateTimer)
                                                 userInfo: nil
                                                  repeats:YES];
+		[self logEvent:@"Break Time Started" withTime:self.counter];
     }
     
 }
@@ -146,6 +149,7 @@ typedef NS_OPTIONS(NSUInteger, TimerType) {
                                                 selector:@selector(updateTimer)
                                                 userInfo: nil
                                                  repeats:YES];
+		[self logEvent:@"Long Break Time Started" withTime:self.counter];
     }
     
 }
@@ -164,6 +168,8 @@ typedef NS_OPTIONS(NSUInteger, TimerType) {
                                                 selector:@selector(updateTimer)
                                                 userInfo: nil
                                                  repeats:YES];
+
+		[self logEvent:@"Work Time Started" withTime:self.counter];
     }
     
 }
@@ -199,6 +205,13 @@ typedef NS_OPTIONS(NSUInteger, TimerType) {
         menuItem.state = NSOffState;
     }
     sender.state = NSOnState;
+}
+
+- (void)logEvent:(NSString *)event withTime:(int)timeCounter {
+	int minutes = timeCounter / 60;
+	int seconds = timeCounter - (minutes  * 60);
+	NSString *setTimer = [NSString stringWithFormat:@"%2d:%.2d", minutes, seconds];
+	[Answers logCustomEventWithName:event customAttributes: @{@"Timer Set": setTimer}];
 }
 
 #pragma mark NotificationCenter
