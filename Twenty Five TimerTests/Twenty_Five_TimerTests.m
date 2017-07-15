@@ -1,18 +1,18 @@
 //
-//  Twenty_Five_Timer_Tests.m
-//  Twenty Five Timer Tests
+//  Twenty_Five_TimerTests.m
+//  Twenty Five TimerTests
 //
-//  Created by Evan Lewis on 7/14/17.
+//  Created by Evan Lewis on 7/15/17.
 //  Copyright © 2017 Evan Lewis. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
 
-@interface Twenty_Five_Timer_Tests : XCTestCase
+@interface Twenty_Five_TimerTests : XCTestCase
 
 @end
 
-@implementation Twenty_Five_Timer_Tests
+@implementation Twenty_Five_TimerTests
 
 - (void)setUp {
     [super setUp];
